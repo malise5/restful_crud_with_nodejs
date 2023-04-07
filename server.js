@@ -7,6 +7,10 @@ const port = 8000;
 //ROUTES
 const router = express.Router();
 
+app.get("/api/v1/", (req, res) => {
+  res.send("Hallo world");
+});
+
 // '============Server Port=======================
 app.listen(port, () => {
   console.log("====================================");
